@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 50 em;
+}
+
+a-scene {
+    height: 30px;
+    width: 60px;
+  }
