@@ -15,16 +15,26 @@
         
     </div>
     <a-scene embedded arjs>
+      <box></box>
       <a-marker preset="hiro">
  
-          <a-video id="cat" 
+          <a-video 
+          controls
+          id="vid" 
         loop
+        preload="auto"
           crossorigin
           webkit-playsinline
           autoplay
           muted
           playsinline
-          src="orb.mp4"></video>
+          response-type="arraybuffer"
+          src="snow.mp4"
+          width="1.720" height="1.480"
+          rotation="90 0 180"
+          >
+        </a-video>
+
 
         
         
