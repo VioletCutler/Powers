@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=pJdNqBbScO8 
+-- AR.JS and Aframe tutorial with video
+
+-- Full test of 15 second video clip
+    - deploy to netlify to test how it works on phones
+    - is it possible to deploy through cargo cult
+    - QR code ? 
+
+
+Backup Plan : 
+- https://artivive.com/
