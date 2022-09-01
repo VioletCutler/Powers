@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-
-    </head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
 
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 
-
-  <body >
-    <div>
-        
-    </div>
+  <body>
+    <div></div>
     <a-scene embedded arjs>
       <box></box>
       <a-marker preset="hiro">
- 
-          <a-video 
+        <a-video
           controls
-          id="vid" 
-        loop
-        preload="auto"
+          id="vid"
+          loop
+          preload="auto"
           crossorigin
           webkit-playsinline
           autoplay
           muted
           playsinline
           response-type="arraybuffer"
-          width="1.720" height="1.480"
+          width="1.720"
+          height="1.480"
           rotation="90 0 180"
-          >
-          <source src="snow.mp4">
-          <source src="snow.webm">
+        >
+          <source src="snow.mp4" type="video/mp4" />
+          <source src="snow.webm" type="video/webm" />
           <p>Your browser doesn't support HTML5 video</p>
         </a-video>
 
-
-        
-        
-        
         <!-- <a-box width=".5" height=".5" depth=".5" position="0 0.5 0" material="color: tomato;">
           <a-sphere radius="0.1" position="0 3 0" color="mediumseagreen"></a-sphere>
           <a-sphere radius="0.1" position="3 0 0" color="skyblue"></a-sphere>
