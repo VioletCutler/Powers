@@ -11,6 +11,6 @@ Backup Plan :
 - https://artivive.com/
 
 Notes:
-- The video works and can be resized within the <a-video> component.
-I next want to see if I can get a 'webm' formatted video so that 
-I don't have to worry as much about compatibility issues.
+- Everything works when using a laptop browser,
+now I just have to figure out how to get it to work 
+on mobile. 
