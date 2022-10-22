@@ -12,9 +12,8 @@
     <div></div>
     <a-scene embedded arjs>
       <box></box>
-      <a-marker preset="hiro">
+      <a-marker-camera preset="hiro">
         <a-video
-          controls
           id="vid"
           loop
           preload="auto"
@@ -22,16 +21,15 @@
           webkit-playsinline
           autoplay
           muted
-          playsinline
           src="intervale.mp4"
-          type="video/mp4"
+          playsinline
           response-type="arraybuffer"
           width="1.720"
           height="1.480"
           rotation="90 0 180"
         >
-          <!-- <source src="intervale.mp4" type="video/mp4" />
-          <source src="intervale.webm" type="video/webm" /> -->
+        <source src="intervale.mp4" type="video/mp4" /> 
+         <source src="intervale.webm" type="video/webm" />
           <p>Your browser doesn't support HTML5 video</p>
         </a-video>
 
@@ -64,7 +62,7 @@
           </a-animation>
         </a-box>
         </a-box> -->
-      </a-marker>
+      </a-marker-camera>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
