@@ -9,17 +9,16 @@
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 
   <body>
-    <div></div>
     <a-scene embedded arjs>
       <box></box>
       <a-marker-camera preset="hiro">
         <a-video
           id="vid"
           loop
+          controls
           preload="auto"
           crossorigin
           webkit-playsinline
-          autoplay
           muted
           src="intervale.mp4"
           playsinline
@@ -27,9 +26,10 @@
           width="1.720"
           height="1.480"
           rotation="90 0 180"
+        
         >
-        <source src="intervale.mp4" type="video/mp4" /> 
-         <source src="intervale.webm" type="video/webm" />
+          <source id="videomp4" src="intervale.mp4" type="video/mp4" />
+          <source id="videowebm" src="intervale.webm" type="video/webm" />
           <p>Your browser doesn't support HTML5 video</p>
         </a-video>
 
