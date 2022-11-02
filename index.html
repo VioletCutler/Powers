@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes">
+    <!-- <meta name="mobile-web-app-capable" content="yes"> -->
   </head>
 
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
@@ -15,17 +15,17 @@
       <a-marker-camera preset="hiro">
         <a-video
           id="vid"
-          loop="true"
-          controls="controls"
+          loop
+          controls
           preload="auto"
-          webkit-playsinline="true"
+          webkit-playsinline
           src="#videomp4"
-          playsinline="true"
+          playsinline
           response-type="arraybuffer"
           width="1.720"
           height="1.480"
           rotation="90 0 180"
-          autoplay="autoplay"
+          autoplay
         >
         <!-- <a-video
         id="vid"
