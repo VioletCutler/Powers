@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <meta name="mobile-web-app-capable" content="yes">
   </head>
 
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
@@ -14,20 +15,30 @@
       <a-marker-camera preset="hiro">
         <a-video
           id="vid"
-          loop
-          controls
+          loop="true"
+          controls="controls"
           preload="auto"
           crossorigin
-          webkit-playsinline
-          muted
-          src="intervale.mp4"
-          playsinline
+          webkit-playsinline="true"
+          src="#videomp4"
+          playsinline="true"
           response-type="arraybuffer"
           width="1.720"
           height="1.480"
-          rotation="90 0 180"
-        
+          rotation="180 0 180"
+          autoplay="autoplay"
         >
+        <!-- <a-video
+        id="vid"
+        src="#videomp4"
+        width="1.720"
+        height="1.480"
+        rotation="90 0 180"
+        preload="auto"
+        crossorigin
+        playsinline="true"
+        webkit-playsinline="true"
+        > -->
           <source id="videomp4" src="intervale.mp4" type="video/mp4" />
           <source id="videowebm" src="intervale.webm" type="video/webm" />
           <p>Your browser doesn't support HTML5 video</p>
